@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+table, td, th {
+  border: 1px solid;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+  text-align: center;
+}
+.accordion {
+	background: transparent;
+    border: none;
+    text-decoration: underline;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active {
+	text-decoration: underline;
+}
+
+.accordion:hover {
+	text-decoration: none;
+}
+
+.panel {
+  padding: 5px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+</style> 
+
+
+<h style="font-size:20px;"><center><b>Alphabet Number One (All Caps)</b></center></h></br>
+<center><input type="text" id="myText" placeholder="Enter your text here" style="width: 75%;">
+<button onclick="myFunction()">Convert</button></center>
+<center><p id="demo"></p></center>
+<b><center>Table of supported characters</b></br>Standard Characters
+<table>
+  <tr>
+    <td>A</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/a.png" width="30px"></td>
+    <td>B</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/b.png" width="30px"></td>
+    <td>C</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/c.png" width="30px"></td>
+    <td>D</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/d.png" width="30px"></td>
+    <td>E</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/e.png" width="30px"></td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/f.png" width="30px"></td>
+    <td>G</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/g.png" width="30px"></td>
+    <td>H</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/h.png" width="30px"></td>
+    <td>I</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/i.png" width="30px"></td>
+    <td>J</td>
+    <td>[img]</td>
+  </tr>
+  <tr>
+    <td>K</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/k.png" width="30px"></td>
+    <td>L</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/l.png" width="30px"></td>
+    <td>M</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/m.png" width="30px"></td>
+    <td>N</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/n.png" width="30px"></td>
+    <td>O</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/o.png" width="30px"></td>
+  </tr>
+  <tr>
+    <td>P</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/p.png" width="30px"></td>
+    <td>Q</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/q.png" width="30px"></td>
+    <td>R</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/r.png" width="30px"></td>
+    <td>S</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/s.png" width="30px"></td>
+    <td>T</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/t.png" width="30px"></td>
+  </tr>
+  <tr>
+    <td>U</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/u.png" width="30px"></td>
+    <td>V</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/v.png" width="30px"></td>
+    <td>W</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/w.png" width="30px"></td>
+    <td>X</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/x.png" width="30px"></td>
+    <td>Y</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/y.png" width="30px"></td>
+  </tr>
+  <tr>
+    <td>Z</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/z.png" width="30px"></td>
+  </tr>
+</table>
+</br>
+Alternative Characters
+<table>
+  <tr>
+    <td>alt. M (type &)</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(m).png" width="30px"></td>
+    <td>alt. T (type #)</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(t).png" width="30px"></td>
+    <td>alt. W (type @)</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(w).png" width="30px"></td>
+  </tr>
+  </table>
+</br>
+
+Special Characters
+<table>
+  <tr>
+    <td>+</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/+.png" width="30px"></td>
+    <td>:: (type $)</td>
+    <td><img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/dots.png" width="30px"></td>
+  </tr>
+  </table>
+</br>
+<i style="padding: 10px;">This alphabet does not currently support numbers or punctuation, as Pugin did not include them in his original alphabets. They may be added in the future.</i>
+</br></br>
+<center>
+<button class="accordion">Version 1.0.0</button>
+<div class="panel">
+  <p>Version 1.0.0 ~ Released.</p>
+</div>
+</center>
+</center>
+
+<script>
+function myFunction() {
+  let person = document.getElementById("myText").value;
+  // Original String
+let str = person;
+let newstr = str.toLowerCase();
+
+// Object for character mapping
+const charMap = {
+    'a': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/a.png" width="60px">',
+    'b': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/b.png" width="60px">',
+    'c': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/c.png" width="60px">',
+    'd': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/d.png" width="60px">',
+    'e': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/e.png" width="60px">',
+    'f': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/f.png" width="60px">',
+    'g': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/g.png" width="60px">',
+    'h': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/h.png" width="60px">',
+    'i': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/i.png" width="60px">',
+    'j': '<img src="https://cdn-icons-png.flaticon.com/512/9944/9944460.png" width="60px">',
+    'k': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/k.png" width="60px">',
+    'l': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/l.png" width="60px">',
+    'm': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/m.png" width="60px">',
+    'n': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/n.png" width="60px">',
+    'o': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/o.png" width="60px">',
+    'p': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/p.png" width="60px">',
+    'q': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/q.png" width="60px">',
+    'r': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/r.png" width="60px">',
+    's': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/s.png" width="60px">',
+    't': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/t.png" width="60px">',
+    'u': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/u.png" width="60px">',
+    'v': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/v.png" width="60px">',
+    'w': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/w.png" width="60px">',
+    'x': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/x.png" width="60px">',
+    'y': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/y.png" width="60px">',
+    ' ': '<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Transparent_Square_Tiles_Texture.png" width="60px">',
+    '&': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(m).png" width="60px">',
+    '#': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(t).png" width="60px">',
+    '@': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/(w).png" width="60px">',
+    '$': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/dots.png" width="60px">',
+    '+': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/+.png" width="60px">',
+    'z': '<img src="https://lordgnomembe.github.io/pugin/filestore/alphabet-1-caps/z.png" width="60px">'
+};
+
+// Function to replace characters using reduce and mapping object
+function replaceWithCharMap(newstr, charMap) {
+    return newstr.split('').reduce((acc, char) => acc + (charMap[char] || char), '');
+}
+
+// Replacing characters using mapping object
+let newString = replaceWithCharMap(newstr, charMap);
+
+document.getElementById("demo").innerHTML = (newString);
+}
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
